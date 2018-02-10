@@ -1,12 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello Mabel</title>
-</head>
-<body>
-    <h1>Hello Mabel</h1>
-</body>
-</html>
+---
+layout: default
+sections:
+  hero:
+    title: Home
+    classes: hero
+  posts:
+    title: Blog
+---
+
+{% for s in page.sections %}
+
+  {% assign id = s[0] %}
+  {% assign section = s[1] %}
+
+  <section class="page-content section-{{ id }} {{ section.classes }}" id="{{ id }}">
+
+    {% include sections/{{ id }}.html %}
+
+  </section>
+
+{% endfor %}
