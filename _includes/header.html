@@ -1,9 +1,6 @@
 <header class="site-header">
 
   <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/favicon.png" alt="{{ site.title }}"></a>
-
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -14,11 +11,14 @@
       </a>
 
       <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.nav-title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.nav-title }}</a>
-          {% endif %}
-        {% endfor %}
+          {% for s in page.sections %}
+
+          {% assign id = s[0] %}
+          {% assign section = s[1] %}
+
+          <a class="page-link" href="#{{ id }}">{{ section.title }}</a>
+        
+        {% endfor %}        
       </div>
     </nav>
 

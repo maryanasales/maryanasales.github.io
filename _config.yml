@@ -1,5 +1,5 @@
 ---
-title: Maryana Sales
+title: Maryana Sales, floreando na web
 timezone: America/Sao_Paulo
 collections:
   posts:
@@ -19,9 +19,9 @@ defaults:
     type: posts
   values:
     layout: post
-description: Eu queria ser a Mabel... ou ser amiga dela ;)
+description: Designer e desenvolvedora santista, que através da criatividade e linhas de código espalha um pouco de si por aí.
 baseurl: ""
-url: http://maryanasales.me
+url: http://maryanasales.com.br
 markdown: kramdown
 sass:
   style: compressed
