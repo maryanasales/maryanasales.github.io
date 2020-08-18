@@ -1,0 +1,67 @@
+* {box-sizing: border-box}
+[hidden] {display: none !important}
+[disabled] {pointer-events:none; opacity: 0.3}
+.horizontal {display: flex; flex-direction: row; justify-content: space-between}
+.vertical {display: flex; flex-direction: column}
+.center {justify-content: center; align-items: center}
+.flex {flex: 1}
+html {
+  --spacing-xs: 8px;
+  --spacing: 24px;
+  --spacing-s: 12px;
+  --spacing-m: 36px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+    color: #333;
+    width: 100%;
+    height: 100vh;
+    background: #fffef9;
+    background-size:50px 50px;
+    background-image: 
+    linear-gradient(0deg, transparent 9%, 
+            rgba(129, 175, 231, .2) 10%, rgba(129, 175, 231, .2) 12%, transparent 13%, transparent 29%, 
+            rgba(129, 175, 231, .1) 30%, rgba(129, 175, 231, .1) 31%, transparent 32%, transparent 49%, 
+            rgba(129, 175, 231, .1) 50%, rgba(129, 175, 231, .1) 51%, transparent 52%, transparent 69%, 
+            rgba(129, 175, 231, .1) 70%, rgba(129, 175, 231, .1) 71%, transparent 72%, transparent 89%,
+            rgba(129, 175, 231, .1) 90%, rgba(129, 175, 231, .1) 91%, transparent 92%, transparent),
+    linear-gradient(90deg, transparent 9%, 
+            rgba(129, 175, 231, .2) 10%, rgba(129, 175, 231, .2) 12%, transparent 13%, transparent 29%, 
+            rgba(129, 175, 231, .1) 30%, rgba(129, 175, 231, .1) 31%, transparent 32%, transparent 49%, 
+            rgba(129, 175, 231, .1) 50%, rgba(129, 175, 231, .1) 51%, transparent 52%, transparent 69%, 
+            rgba(129, 175, 231, .1) 70%, rgba(129, 175, 231, .1) 71%, transparent 72%, transparent 89%,
+            rgba(129, 175, 231, .1) 90%, rgba(129, 175, 231, .1) 91%, transparent 92%, transparent);
+}
+
+.info {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    text-align: center;
+    line-height: 2em;
+}
+
+.info .subtitle {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.link-social {
+    margin: 0 5px;
+    background-color: #facbdd;
+    text-decoration: none;
+    color: #333;
+}

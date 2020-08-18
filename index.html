@@ -1,27 +1,29 @@
----
-layout: default
-sections:
-  sobre:
-    title: Sobre mim
-  servicos:
-    title: Serviços    
-    classes: txt-center
-  portfolio:
-    title: Portfólio
-    classes: hero txt-center
-  contato:
-    title: Contato    
----
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Montserrat:wght@800&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/style.css" />
+    <title>Maryana Sales - Floreando na Web</title>
+</head>
+<body>
+    <section class="info">
+        <h1>Maryana</h1>
+        <p class="subtitle">🌸 floreando na web 🌸</p>
 
-{% for s in page.sections %}
+        <p>
+            <a class="link-social" target="_blank" 
+                href="https://www.linkedin.com/in/maryanasales/" 
+                title="Meu perfil no Linkedin">linkedin</a>
 
-  {% assign id = s[0] %}
-  {% assign section = s[1] %}
+            <a class="link-social" target="_blank" 
+                href="https://www.behance.net/maryanasales" 
+                title="Meu perfil no Behance">behance</a>
 
-  <section class="page-content section-{{ id }} {{ section.classes }}" id="{{ id }}">
-
-    {% include sections/{{ id }}.html %}
-
-  </section>
-
-{% endfor %}
+            <a class="link-social" target="_blank" 
+                href="https://drive.google.com/file/d/1yiDxiKmyNgXUF4Jz3A8Hp3FsI_3otjXw/view?usp=sharing" 
+                title="Visualizar meu Currículo em PDF">Currículo</a>
+        </p>
+    </section>
+</body>
+</html>
